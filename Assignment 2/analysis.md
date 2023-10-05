@@ -49,12 +49,10 @@ Equation: $E_p = \frac{S_p}{p}$ </br>
 | **100** | 1.26180   | 1.24653   | 0.45454   | 0.25831   | 0.23930    |
 | **500** | 0.90246   | 0.79472   | 0.53858   | 0.42917   | 0.38214    |
 
-![10x10 Efficiency](Transposition/Efficiency/image.png)
-![50x50 Efficiency](Transposition/Efficiency/image-1.png)
-![100x100 Efficiency](Transposition/Efficiency/image-2.png)
-![500x500 Efficiency](Transposition/Efficiency/image-3.png)
-
-#### Discussion
+![10x10 Efficiency](Multiplication/Efficiency/image.png)
+![50x50 Efficiency](Multiplication/Efficiency/image-1.png)
+![100x100 Efficiency](Multiplication/Efficiency/image-2.png)
+![500x500 Efficiency](Multiplication/Efficiency/image-3.png)
 
 ### Matrix Transposition Performance Analysis
 
@@ -67,10 +65,10 @@ Equation: $E_p = \frac{S_p}{p}$ </br>
 | **100** | 0.000172 | 0.000143  | 7.70e-05  | 0.000712  | 0.001212  | 0.000551   |
 | **500** | 0.004165 | 0.003406  | 0.001428  | 0.002609  | 0.002632  | 0.002619   |
 
-![10x10 Matrix Execution Time](Multiplication/Execution/image.png)
-![50x50 Matrix Execution Time](Multiplication/Execution/image-1.png)
-![100x100 Matrix Execution Time](Multiplication/Execution/image-2.png)
-![500x500 Matrix Execution Time](Multiplication/Execution/image-3.png)
+![10x10 Matrix Execution Time](Transposition/Execution/image.png)
+![50x50 Matrix Execution Time](Transposition/Execution/image-1.png)
+![100x100 Matrix Execution Time](Transposition/Execution/image-2.png)
+![500x500 Matrix Execution Time](Transposition/Execution/image-3.png)
 
 #### Speed Up
 
@@ -108,4 +106,6 @@ Equation: $E_p = \frac{S_p}{p}$ </br>
 ![100x100 Efficiency](Transposition/Efficiency/image-2.png)
 ![500x500 Efficiency](Transposition/Efficiency/image-3.png)
 
-#### Discussion
+## Discussion
+
+Something I noticed was in the 10x10 matrix, the serial matrix was the fastest, however as the dimensions of the NxN matrix increased the serial became the slowest. For the reamining matrices 4 threads was the fastest. My machine has only 4 cores which makes sense as to why the 4 threads had the best time, efficiency, and speed up. As for the 10x10 matrix, the matrix may have been too simple for parallelization and parallelizing it took more time to run as it made the problem more complex.
